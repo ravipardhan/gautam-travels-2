@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ride - GAUTAM TRAVELS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="book.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="theme-elegant">
+
+    <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Gautam Travels India</a>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Our Service</a>
+        <a href="book.html" class="btn-primary active">Book Now</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+    <main class="form-page">
+        <div class="container">
+            <section class="booking-form-section">
+                <div class="booking-form">
+                    <h2>Book Your Vehicle</h2>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="car-type">Choose Your Car</label>
+                            <select id="car-type" name="car-type" required>
+                                <option value="">Select a Car</option>
+                                <option value="sedan">Sedan (e.g., Toyota Etios, Maruti Dzire)</option>
+                                <option value="hatchback">Hatchback (e.g., Maruti Wagon R, Swift)</option>
+                                <option value="suv">SUV (e.g., Toyota Innova Crysta)</option>
+                                <option value="luxury-bus">Luxury Bus (27-seater)</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickup-date">Pick-up Date</label>
+                                <input type="date" id="pickup-date" name="pickup-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pickup-time">Pick-up Time</label>
+                                <input type="time" id="pickup-time" name="pickup-time" required>
+                            </div>
+                        </div>
+                         <div class="form-row">
+                            <div class="form-group">
+                                <label for="return-date">Return Date</label>
+                                <input type="date" id="return-date" name="return-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="return-time">Return Time</label>
+                                <input type="time" id="return-time" name="return-time" required>
+                            </div>
+                        </div>
+                        <hr style="margin: 2rem 0; border-color: var(--border);">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 12345 67890" required>
+                            </div>
+                        <div class="form-group">
+                            <label for="comments">Special Requests</label>
+                            <textarea id="comments" name="comments" rows="4" placeholder="e.g., child seat, specific route"></textarea>
+                        </div>
+                        <button type="submit" class="btn-cta" style="width: 100%; margin-top: 1rem;">Confirm Booking</button>
+                    </form>
+                </div>
+                <div class="contact-details">
+                    <h2>Contact Information</h2>
+                    <p><strong>Name:</strong> GAUTAM TRAVELS</p>
+                    <p><strong>Address:</strong> Dharuhera Sector 6</p>
+                    <p><strong>City:</strong> Dharuhera Rewari</p>
+                    <p><strong>State:</strong> Haryana</p>
+                    <p><strong>Pincode:</strong> 123106</p>
+                    <p><strong>Mobile:</strong> 9643544132 / 9818174651</p>
+                    <p><strong>Whatsapp No.:</strong> 9643544132 / 9818174651</p>
+                    <p><strong>Email:</strong> gautamtravelsncr@gmail.com</p>
+                    <p><strong>Domain name:</strong> gauatmtravelsindia.com</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                     <h4>GAUTAM TRAVELS</h4>
+                     <p>Your journey, our passion. Providing reliable and comfortable car rentals for every occasion.</p>
+                </div>
+                <div class="footer-col useful-links">
+                     <h4>Useful Links</h4>
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Our Fleet</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                     </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <div class="contact-list">
+                        <p><strong>Address:</strong> Dharuhera Sector 6, Dharuhera Rewari, Haryana 123106</p>
+                        <p><strong>Mobile:</strong> <a href="tel:9643544132">9643544132</a> / <a href="tel:9818174651">9818174651</a></p>
+                        <p><strong>Whatsapp No.:</strong> <a href="https://wa.me/919643544132">9643544132</a> / <a href="https://wa.me/919818174651">9818174651</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:gautamtravelsncr@gmail.com">gautamtravelsncr@gmail.com</a></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1G31LJz2KH/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/gautamtravelsindia" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Vb6YV4P7NoZwDi0DAJ0Z" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GAUTAM TRAVELS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="book.js"></script>
+
+    <!-- BOTTOM MOBILE NAV BAR -->
+    <div class="mobile-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fa fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="services.html" class="nav-item">
+            <i class="fa fa-concierge-bell"></i>
+            <span>Services</span>
+        </a>
+        <a href="book.html" class="nav-item active">
+            <i class="fa fa-car"></i>
+            <span>Book Ride</span>
+        </a>
+        <a href="contact.html" class="nav-item">
+            <i class="fa fa-phone"></i>
+            <span>Contact</span>
+        </a>
+    </div>
+
+</body>
+</html>

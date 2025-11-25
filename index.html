@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gautam Travels India — Premium & Colorful</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hero.css">
+</head>
+<body class="theme-elegant">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Gautam Travels India</a>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Our Service</a>
+        <a href="book.html" class="btn-primary">Book Now</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="https://source.unsplash.com/1600x900/?travel,car" alt="Travel hero image" class="hero-img">
+      <div class="hero-content container">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <h1>Premium travel. Bright design. Smooth rides.</h1>
+            <p class="hero-sub">Comfortable rides for every journey — whether it’s a quick city transfer, a punctual airport pickup, or a long outstation trip. Choose from sedans, SUVs, luxury cars, tempo travellers and coaches tailored to your needs.</p>
+
+            <div class="hero-features">
+              <span class="hero-feature">✔ Verified drivers</span>
+              <span class="hero-feature">🧼 Sanitized vehicles</span>
+              <span class="hero-feature">🕒 24/7 support</span>
+              <span class="hero-feature">💸 Transparent pricing</span>
+              <span class="hero-feature">⚡ Instant quotes</span>
+            </div>
+            <a href="book.html" class="btn-cta">Book your ride</a>
+          </div>
+
+          <div class="hero-right">
+            <div class="booking-box">
+              <h3>Quick Booking</h3>
+              <form id="bookingForm" class="booking-form" onsubmit="return handleBooking(event)">
+                  <label for="name">Full name
+                    <input id="name" name="name" placeholder="Full name" required>
+                  </label>
+
+                  <label for="email">Email
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                  </label>
+
+                  <label for="phone">Phone
+                    <input id="phone" name="phone" placeholder="Phone (e.g. +91 9xxxx)" required>
+                  </label>
+
+                  <label for="pickup">Pickup address
+                    <input id="pickup" name="pickup" placeholder="Pickup address" required>
+                  </label>
+
+                  <label for="dropoff">Drop address
+                    <input id="dropoff" name="dropoff" placeholder="Drop address" required>
+                  </label>
+
+                  <label for="pickup_datetime">Pickup Date & Time
+                    <input id="pickup_datetime" type="datetime-local" name="pickup_datetime" required>
+                  </label>
+
+                  <label for="category">Vehicle category
+                    <select id="category" name="category" required>
+                      <option value="">Select vehicle category</option>
+                      <option value="sedan">Sedan</option>
+                      <option value="hatch">Hatchback</option>
+                      <option value="suv">SUV / Large Car</option>
+                      <option value="mpv">MPV / Innova</option>
+                      <option value="tempo">Tempo Traveller</option>
+                      <option value="coach">Coach / Bus</option>
+                    </select>
+                  </label>
+
+                  <label for="model">Choose model (optional)
+                    <select id="model" name="model">
+                      <option value="">-- Select model --</option>
+                    </select>
+                  </label>
+
+                  <div class="form-actions">
+                    <button type="submit" class="btn-cta">Request Booking</button>
+                    <button type="reset" class="btn-secondary">Reset</button>
+                  </div>
+                </form>
+                <div id="bookingResult" class="booking-result" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights container">
+      <div class="card">
+        <h3>Wide Fleet</h3>
+        <p>Sedans, SUVs, luxury, Tempo Travellers and coaches — vehicles for all group sizes.</p>
+      </div>
+      <div class="card">
+        <h3>Secure Bookings</h3>
+        <p>Quick, transparent booking form with model selection and instant confirmation.</p>
+      </div>
+      <div class="card">
+        <h3>Premium Experience</h3>
+        <p>Colorful, modern interface and attentive service for every journey.</p>
+      </div>
+    </section>
+
+    <section class="fleet container">
+      <h2>Popular Vehicles</h2>
+
+      <div class="fleet-grid">
+        <article class="fleet-item">
+          <img src="all-cars.jpg" alt="Sedan Car">
+          <h4>Sedan Car</h4>
+        </article>
+
+        <article class="fleet-item">
+          <img src="maruti-suzuki-dzire-lxi1752216345304.avif" alt="Dzire, Aura">
+          <h4>Dzire, Aura</h4>
+        </article>
+        
+        <article class="fleet-item">
+          <img src="3.1 xcent-exterior-right-front-three-quarter.avif" alt="Xent">
+          <h4>Xent</h4>
+        </article>
+
+        
+        <article class="fleet-item">
+          <img src="3.2 Toyota-Platinum-Etios-Exterior-119077.avif" alt="Etios">
+          <h4>Etios</h4>
+          </article>
+
+           <article class="fleet-item">
+           <img src="1.3 maruti-suzuki-wagon-r-23-jan-2019.jpg" alt="Hatchback Wagner">
+          <h4>Hatchback Wagner</h4>
+        </article>
+
+        <article class="fleet-item">
+          <img src="1.4 swift-colour-solid-fire-red.jpg" alt="Swift">
+          <h4>Swift</h4>
+        </article>
+        <article class="fleet-item">
+          <img src="1.6 baleno-nexa-500x500.webp" alt="Baleno">
+          <h4>Baleno</h4>
+        </article>
+        <article class="fleet-item">
+          <img src="1.7 celerio-colour-silky-silver.jpg" alt="Celerio">
+           <h4>Celerio</h4>
+        </article>
+
+          <article class="fleet-item">
+           <img src="1.8 toyota-innova-crysta-2-7-vx-mt-7-seater-petrol-640.jpg" alt="Innova">
+          <h4>Innova</h4>
+        </article>
+
+        <article class="fleet-item">
+          <img src="1.9 images.jpg" alt="Tempo Traveller 12 to 26 Seater ">
+          <h4>Tempo Traveller 12 to 26 Seater </h4>
+        </article>
+        
+        <article class="fleet-item">
+          <img src="2.0 27-seater-luxury-bus-250x250.webp" alt="Bus 27">
+          <h4>Bus 27</h4>
+        </article>
+        <article class="fleet-item">
+          <img src="4.5 images.jpg" alt="Bus 27 to 65 Seater">
+          <h4>Bus 27 to 65 Seater</h4>
+        </article>
+
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col contact-col">
+          <h4>Contact Us</h4>
+          <address class="contact-list">
+            Dharuhera Sector 6<br>
+            Dharuhera Rewari, Haryana 123106
+          </address>
+          <p>
+            <a href="tel:+919643544132">+91 9643544132</a><br>
+            <a href="tel:+919818174651">+91 9818174651</a>
+          </p>
+          <p><a href="mailto:gautamtravelsncr@gmail.com">gautamtravelsncr@gmail.com</a></p>
+          <div class="social-links" aria-label="Social links">
+            <a href="https://www.facebook.com/share/1G31LJz2KH/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gautamtravelsindia" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://whatsapp.com/channel/0029Vb6YV4P7NoZwDi0DAJ0Z" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col useful-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="gallery.html">Our Gallery</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col about-col">
+          <h4>About</h4>
+          <p class="lead">Gautam Travels provides reliable cab and travel services across Dharuhera, Rewari and nearby regions. Comfortable vehicles, verified drivers and 24/7 support.</p>
+          <p class="lead">For urgent bookings call <a href="tel:+919643544132">+91 9643544132</a> or chat on WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <small>&copy; <span id="year"></span> Gautam Travels India — All rights reserved.</small>
+        <small>Designed with care • Contact: <a href="mailto:gautamtravelsncr@gmail.com">gautamtravelsncr@gmail.com</a></small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- BOTTOM MOBILE NAV BAR -->
+  <div class="mobile-nav">
+    <a href="index.html" class="nav-item active">
+        <i class="fa fa-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="services.html" class="nav-item">
+        <i class="fa fa-concierge-bell"></i>
+        <span>Services</span>
+    </a>
+    <a href="book.html" class="nav-item">
+        <i class="fa fa-car"></i>
+        <span>Book Ride</span>
+    </a>
+    <a href="contact.html" class="nav-item">
+        <i class="fa fa-phone"></i>
+        <span>Contact</span>
+    </a>
+  </div>
+  <div class="fixed-buttons">
+    <a href="https://wa.me/919643544132" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:+919643544132" class="call-btn"><i class="fas fa-phone"></i></a>
+  </div>
+</body>
+</html>
